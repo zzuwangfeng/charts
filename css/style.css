@@ -1,0 +1,82 @@
+@charset "utf-8";
+#container .left,
+#container .right {
+    width: 50%;
+    height: 720px;
+    float: left;
+    overflow: hidden;
+}
+
+#container .left {
+    background-image: url("../images/big-box-bg.png");
+    background-position: center center;
+}
+
+#container .left .canvas,
+#container .right .canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#container .right .can1,
+#container .right .can2,
+#container .right .can3,
+#container .right .can4 {
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+#container .right .can1,
+#container .right .can4 {
+    background-image: url("../images/small-box-bg.png");
+    background-position: center center;
+}
+
+#container .right .can2,
+#container .right .can3 {
+    background-image: url("../images/small-box-bg2.png");
+    background-position: center center;
+}
+
+#container .bottom .left,
+#container .bottom .center,
+#container .bottom .right {
+    width: 33.3333333333333333%;
+    height: 550px;
+    float: left;
+}
+
+#container .bottom .left {
+    background-image: -webkit-linear-gradient( 103deg, rgb(68, 9, 119) 0%, rgb(116, 32, 188) 100%);
+    background-image: linear-gradient( 103deg, rgb(68, 9, 119) 0%, rgb(116, 32, 188) 100%);
+}
+
+#container .bottom .center {
+    background-image: -webkit-linear-gradient( 103deg, rgb(44, 26, 108) 0%, rgb(84, 69, 140) 100%);
+    background-image: linear-gradient( 103deg, rgb(44, 26, 108) 0%, rgb(84, 69, 140) 100%);
+}
+
+#container .bottom .right {
+    background-image: -webkit-linear-gradient( 103deg, rgb(130, 17, 17) 0%, rgb(182, 51, 51) 100%);
+    background-image: linear-gradient( 103deg, rgb(130, 17, 17) 0%, rgb(182, 51, 51) 100%);
+}
+#container .bottom .canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*IE/7/6*/
+}
